@@ -41,7 +41,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
-		alert("allergy_count is " + allergy_count); <!--I wanted to  further clarify that the alert is displaying the count for allergy_count-->
+		alert("allergy_count is " + allergy_count); <!--I wanted to further clarify that the alert is displaying the count for allergy_count-->
 
         }
 
@@ -53,7 +53,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function changeText(){
 		var percent_allergy = allergy_count/(allergy_count + cold_count)*100; <!--This line converts the allergy_count into a percentage-->
 		var percent_cold = cold_count/(allergy_count + cold_count)*100; <!--This line converts the cold_count into a percentage-->
-		var initialText = document.getElementById("results");
+		var initialText = document.getElementById("results"); <!--I put the "results" paragraph into a variable called "initialText"--> 
 		initialText.innerHTML = "Probability it is allergies = " + percent_allergy + "% <br> Probability it is a cold = " + percent_cold + "%" <!--This line replaces the initialText from the Results Page with the diagnosis-->
 	}
 	
@@ -85,7 +85,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
+	<h1>Cold or Allergies?</h1> 
 </div>
 <!--this section displays the content that the user sees immediately upon opening the website-->
 <div id="content" class="w3-container">
