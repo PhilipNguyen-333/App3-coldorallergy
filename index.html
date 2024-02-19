@@ -146,6 +146,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 </div>
 <div class="page" id="five">
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- creating the header for Q5-->
+		<h1>Question 5</h1>
+	</div>
+
+	<div id="content" class="w3-container">
+		<p>Do you have skin rashes? </p> <!--I asked the question for Q5 here.-->
+		<a href="#six" onclick="allergyAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q5. If clicked, adds one to allergy_count-->
+		<a href="#six" onclick="coldAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q5. If clicked, adds one to cold_count-->
+	</div>
+</div>
+		
+<div class="page" id="six">
 	<div id="header" class="w3-container w3-flat-carrot"> <!--I made the header for the results page-->
 		<h1>Results Page</h1>
 	</div>
