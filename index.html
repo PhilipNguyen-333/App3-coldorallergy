@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Philip Nguyen
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,11 +17,11 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
- 
+The code produces a survey that asks the user a series of six questions in order to determine the probability that the user is experiencing a cold or an allergy. 
+However, this code is not meant to be a proper diagnosis and should not be used to diagnose any condition. 
+	
 Known Issues:
-blah, blah, blah, blah
-
+There are no issues with this code that I am aware of. 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
@@ -36,16 +36,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var allergy_count = 0;//variable to keep track of the number of times the user answers a question that leads to the allergy diagnosis 
+        var cold_count = 0;//variable to keep track of the number of times the user answers a question that leads to the cold diagnosis 
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
+        function allergyAdd(){ //this function is used to add an additional count to allergy_count each time it is called
+            allergy_count = allergy_count + 1; 
 		//alert("allergy_count is " + allergy_count); I wanted to further clarify that the alert is displaying the count for allergy_count, but this code is now irrelevant
         }
 
         function coldAdd(){
-            cold_count = cold_count + 1;
+            cold_count = cold_count + 1;//this function is used to add an additional count to cold_count each time it is called
 		//alert("cold_count is " + cold_count); I wanted to add further clarify that the alert is displaying the count for cold_count, but this code is now irrelevant
         }
 
